@@ -1,8 +1,9 @@
 #hud {
   width: 1371px;
   max-width: 100%;
+  position: relative;
   aspect-ratio: 5.9094827586 / 1;
-  background: url("../../assets/images/tft_hud_background.png");
+  background: url("../../assets/images/hud_background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

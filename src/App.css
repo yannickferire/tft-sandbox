@@ -1,4 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap");
+
 body {
+  font-family: "Arsenal", sans-serif;
   background: #0f1014;
-  color: #fdfdfe;
+  color: #f1f6f3;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+.inactive-btn {
+  color: #575657;
 }
