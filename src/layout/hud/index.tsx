@@ -4,6 +4,7 @@ import './styles.css';
 import GoldDisplay from '../../components/goldDisplay'
 import XpButton from '../../components/xpButton'
 import RefreshButton from '../../components/refreshButton'
+import ChampionsRoll from '../../components/championsRoll'
 
 class Hud extends Component {
   render() {
@@ -12,6 +13,7 @@ class Hud extends Component {
         <GoldDisplay />
         <XpButton />
         <RefreshButton />
+        <ChampionsRoll />
       </div>
     );
   }
