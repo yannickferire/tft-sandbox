@@ -1,0 +1,96 @@
+#rolling-chances {
+  width: 22.5%;
+  top: 10%;
+  left: 18%;
+}
+#rolling-chances > li > span {
+  text-indent: -9999em;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #a19b8b;
+}
+#rolling-chances > #r-c-1-cost > .cost-shape {
+  border-radius: 50%;
+}
+#rolling-chances > #r-c-2-cost > .cost-shape {
+  background: #42ba5a;
+  border-radius: 50%;
+}
+#rolling-chances > #r-c-3-cost > .cost-shape {
+  background: none;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 7px solid #42c3ff;
+}
+#rolling-chances > #r-c-4-cost > .cost-shape {
+  background: none;
+  width: 5px;
+  height: 0;
+  margin-top: 2px;
+  box-sizing: content-box;
+  border-width: 5px 2px 0;
+  border-style: solid;
+  border-color: #aa09a4 transparent;
+}
+#rolling-chances > #r-c-4-cost > .cost-shape:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -9px;
+  left: -2px;
+  border-width: 0 4.5px 4px;
+  border-style: solid;
+  border-color: transparent transparent #aa09a4;
+}
+
+#rolling-chances > #r-c-5-cost > .cost-shape {
+  background: #fc9000;
+  width: 8px;
+  height: 4px;
+}
+#rolling-chances > #r-c-5-cost > .cost-shape:before {
+  content: "";
+  position: absolute;
+  top: -2.5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 2.5px solid #fc9000;
+}
+#rolling-chances > #r-c-5-cost > .cost-shape:after {
+  content: "";
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 2.5px solid #fc9000;
+}
+#rolling-chances > #r-c-1-cost {
+  color: #a19b8b;
+}
+#rolling-chances > #r-c-2-cost {
+  color: #42ba5a;
+}
+#rolling-chances > #r-c-3-cost {
+  color: #42c3ff;
+}
+#rolling-chances > #r-c-4-cost {
+  color: #aa09a4;
+}
+#rolling-chances > #r-c-5-cost {
+  color: #fc9000;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles.css';
 
 import LevelDisplay from '../../components/hud/levelDisplay'
+import RollingChances from '../../components/hud/rollingChances'
 import GoldDisplay from '../../components/hud/goldDisplay'
 import XpButton from '../../components/hud/xpButton'
 import RefreshButton from '../../components/hud/refreshButton'
@@ -12,6 +13,7 @@ class Hud extends Component {
     return (
       <div id="hud" className="justify-self-center self-center mt-auto w-full">
         <LevelDisplay />
+        <RollingChances />
         <GoldDisplay />
         <XpButton />
         <RefreshButton />
