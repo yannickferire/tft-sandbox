@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import GoldDisplay from '../../components/goldDisplay'
-import XpButton from '../../components/xpButton'
-import RefreshButton from '../../components/refreshButton'
-import ChampionsRoll from '../../components/championsRoll'
+import GoldDisplay from '../../components/hud/goldDisplay'
+import XpButton from '../../components/hud/xpButton'
+import RefreshButton from '../../components/hud/refreshButton'
+import ChampionsRoll from '../../components/hud/championsRoll'
 
 class Hud extends Component {
   render() {

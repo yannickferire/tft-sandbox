@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import coinIcon from '../../assets/images/icons/coin.png';
+import coinIcon from '../../../assets/images/icons/coin.png';
 
 class GoldDisplay extends Component {
   render() {

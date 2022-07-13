@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import coinInactiveIcon from '../../assets/images/icons/coin--inactive.png';
+import coinInactiveIcon from '../../../assets/images/icons/coin--inactive.png';
 
 class XpButton extends Component {
   render() {

@@ -4,6 +4,7 @@ overrides:
   esbuild: npm:esbuild-wasm@latest
 
 specifiers:
+  '@rematch/core': ^2.2.0
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
   '@vitejs/plugin-react': ^1.3.0
@@ -12,20 +13,23 @@ specifiers:
   postcss: ^8.4.14
   react: ^18.0.0
   react-dom: ^18.0.0
+  react-redux: ^8.0.2
   tailwindcss: ^3.1.5
   typescript: ^4.6.3
   vite: ^2.9.9
 
 dependencies:
+  '@rematch/core': 2.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-redux: 8.0.2_v7vsrdtui4d36prbwvdnlb7tpq
 
 devDependencies:
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 1.3.2
   autoprefixer: 10.4.7_postcss@8.4.14
-  esbuild-wasm: 0.14.48
+  esbuild-wasm: 0.14.49
   postcss: 8.4.14
   tailwindcss: 3.1.5
   typescript: 4.7.4
@@ -259,6 +263,13 @@ packages:
       '@babel/types': 7.18.7
     dev: true
 
+  /@babel/runtime/7.18.6:
+    resolution: {integrity: sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
+
   /@babel/template/7.18.6:
     resolution: {integrity: sha512-JoDWzPe+wgBsTTgdnIma3iHNFC7YVJoPssVBDjiHfNlyt4YcunDtcDOUmfVDfCK5MfdsaIoX9PkijPhjH3nYUw==}
     engines: {node: '>=6.9.0'}
@@ -353,6 +364,13 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@rematch/core/2.2.0:
+    resolution: {integrity: sha512-Sj3nC/2X+bOBZeOf4jdJ00nhCcx9wLbVK9SOs6eFR4Y1qKXqRY0hGigbQgfTpCdjRFlwTHHfN3m41MlNvMhDgw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      redux: '>=4'
+    dev: false
+
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
     engines: {node: '>= 8.0.0'}
@@ -361,15 +379,20 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /@types/hoist-non-react-statics/3.3.1:
+    resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
+    dependencies:
+      '@types/react': 18.0.15
+      hoist-non-react-statics: 3.3.2
+    dev: false
+
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
 
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
       '@types/react': 18.0.15
-    dev: true
 
   /@types/react/18.0.15:
     resolution: {integrity: sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==}
@@ -377,11 +400,13 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
       csstype: 3.1.0
-    dev: true
 
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
-    dev: true
+
+  /@types/use-sync-external-store/0.0.3:
+    resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
+    dev: false
 
   /@vitejs/plugin-react/1.3.2:
     resolution: {integrity: sha512-aurBNmMo0kz1O4qRoY+FM4epSA39y3ShWGuqfLRA/3z0oEJAdtoSfgA3aO98/PCCHAqMaduLxIxErWrVKIFzXA==}
@@ -537,7 +562,6 @@ packages:
 
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
-    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -577,8 +601,8 @@ packages:
     resolution: {integrity: sha512-IADi390FRdvxWfVX3hjzfTDNVHiTqVo9ar53/7em/SfhUG9YcjVhyQecY/XwmBHRKden/wFud7RWOUH7+7LFng==}
     dev: true
 
-  /esbuild-wasm/0.14.48:
-    resolution: {integrity: sha512-snSjjhm2OKEOfJqQWFDMg5q7Z5Dle6YK2aGTsAUGepGCMtJCxfG0fYMIJiKudcEmsviyMKCi9oASoUdnsGf+1Q==}
+  /esbuild-wasm/0.14.49:
+    resolution: {integrity: sha512-5ddzZv8M3WI1fWZ5rEfK5cSA9swlWJcceKgqjKLLERC7FnlNW50kF7hxhpkyC0Z/4w7Xeyt3yUJ9QWNMDXLk2Q==}
     engines: {node: '>=12'}
     hasBin: true
     dev: true
@@ -672,6 +696,12 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /hoist-non-react-statics/3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+    dependencies:
+      react-is: 16.13.1
+    dev: false
 
   /is-binary-path/2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
@@ -883,6 +913,47 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-is/18.2.0:
+    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+    dev: false
+
+  /react-redux/8.0.2_v7vsrdtui4d36prbwvdnlb7tpq:
+    resolution: {integrity: sha512-nBwiscMw3NoP59NFCXFf02f8xdo+vSHT/uZ1ldDwF7XaTpzm+Phk97VT4urYBl5TYAPNVaFm12UHAEyzkpNzRA==}
+    peerDependencies:
+      '@types/react': ^16.8 || ^17.0 || ^18.0
+      '@types/react-dom': ^16.8 || ^17.0 || ^18.0
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+      react-native: '>=0.59'
+      redux: ^4
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+      redux:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.18.6
+      '@types/hoist-non-react-statics': 3.3.1
+      '@types/react': 18.0.15
+      '@types/react-dom': 18.0.6
+      '@types/use-sync-external-store': 0.0.3
+      hoist-non-react-statics: 3.3.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-is: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
   /react-refresh/0.13.0:
     resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
     engines: {node: '>=0.10.0'}
@@ -907,6 +978,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
@@ -1028,6 +1103,14 @@ packages:
       picocolors: 1.0.0
     dev: true
 
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
@@ -1048,7 +1131,7 @@ packages:
       stylus:
         optional: true
     dependencies:
-      esbuild: /esbuild-wasm/0.14.48
+      esbuild: /esbuild-wasm/0.14.49
       postcss: 8.4.14
       resolve: 1.22.1
       rollup: 2.75.7

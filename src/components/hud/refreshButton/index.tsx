@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-import coinIcon from '../../assets/images/icons/coin.png';
-import coinInactiveIcon from '../../assets/images/icons/coin--inactive.png';
+import coinIcon from '../../../assets/images/icons/coin.png';
+import coinInactiveIcon from '../../../assets/images/icons/coin--inactive.png';
 
 class RefreshButton extends Component {
   render() {
