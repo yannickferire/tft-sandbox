@@ -4,7 +4,7 @@ import './styles.css';
 import rollingData from '../../../data/rolling.json';
 
 // const lvl = "lvl7";
-const lvlData = rollingData.lvl2;
+const lvlData = rollingData.lvl7;
 
 class RollingChances extends Component {
   render() {

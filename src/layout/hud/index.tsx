@@ -11,7 +11,7 @@ import ChampionsRoll from '../../components/hud/championsRoll'
 class Hud extends Component {
   render() {
     return (
-      <div id="hud" className="justify-self-center self-center mt-auto w-full">
+      <div id="hud" className="justify-self-center self-center mt-auto w-full select-none">
         <LevelDisplay />
         <RollingChances />
         <GoldDisplay />
