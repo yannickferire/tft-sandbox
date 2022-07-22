@@ -11,7 +11,7 @@ class RollingChances extends Component {
     return (
       <ul id="rolling-chances" className="flex absolute text-xs">
         {Object.entries(lvlData).map(rollChance => (
-          <li id={"r-c-"+rollChance[0]} className="flex-1 pl-4 relative mr-2"><span className="cost-shape">{rollChance[0]}</span> {rollChance[1]}%</li>
+          <li key={rollChance[0]} id={"r-c-"+rollChance[0]} className="flex-1 pl-4 relative mr-2"><span className="cost-shape">{rollChance[0]}</span> {rollChance[1]}%</li>
         ))}
       </ul>
     );
