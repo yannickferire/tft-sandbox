@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { RootState, Dispatch } from '../../../store/store';
 import { connect } from 'react-redux';
 import './styles.css';
