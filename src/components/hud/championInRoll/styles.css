@@ -20,7 +20,7 @@
   background-size: cover;
   z-index: 10;
 }
-#champions-roll > li.five-cost:before {
+#champions-roll > li.cost-5:before {
   background-image: url("../../../assets/images/hud_champion-5.png");
 }
 
