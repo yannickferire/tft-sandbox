@@ -19,7 +19,7 @@ const mapState = (state: RootState) => ({
 })
 
 const mapDispatch = (dispatch: Dispatch) => ({
-	spend: () => dispatch.level.spend(2),
+	setLevel: () => dispatch.level.setLevel(),
 })
 
 type StateProps = ReturnType<typeof mapState>
